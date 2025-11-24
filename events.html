@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upcoming charity events, fundraisers, and community gatherings hosted by Charity Hope.">
+    <title>Events | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Events</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(155, 89, 182, 0.9), rgba(52, 152, 219, 0.9)),
+                url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920') center/cover; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Upcoming Events</h1>
+                <p>Join us for fundraisers, community gatherings, and special programs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EVENTS LIST ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Event 1 -->
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Charity gala" class="card-img">
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; color: var(--text-light); font-size: 0.9rem;">
+                        <span>📅 April 20, 2024</span>
+                        <span>🕐 6:00 PM - 11:00 PM</span>
+                        <span>📍 Hope City Convention Center</span>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Annual Charity Gala 2024</h3>
+                    <p class="card-text">Join us for our biggest fundraising event of the year! Enjoy dinner, entertainment, and inspiring stories of impact. All proceeds support our education and healthcare programs.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0; text-align: center;">
+                        <strong>Tickets:</strong> $150 per person | $1,200 for table of 8
+                    </div>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="#" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600" alt="5K run" class="card-img">
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; color: var(--text-light); font-size: 0.9rem;">
+                        <span>📅 May 5, 2024</span>
+                        <span>🕐 8:00 AM - 12:00 PM</span>
+                        <span>📍 Central Park</span>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Hope Run 5K</h3>
+                    <p class="card-text">Lace up your running shoes for our annual 5K run/walk! A fun event for the whole family. Registration includes a t-shirt and refreshments. All proceeds go to our food security programs.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0; text-align: center;">
+                        <strong>Registration:</strong> $35 per person | $100 for family of 4
+                    </div>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="#" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Volunteer appreciation" class="card-img">
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; color: var(--text-light); font-size: 0.9rem;">
+                        <span>📅 May 15, 2024</span>
+                        <span>🕐 2:00 PM - 5:00 PM</span>
+                        <span>📍 Community Center</span>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Volunteer Appreciation Day</h3>
+                    <p class="card-text">A special event to celebrate and thank our amazing volunteers! Join us for food, music, awards, and recognition of those who make our work possible.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0; text-align: center;">
+                        <strong>Free Event:</strong> Open to all volunteers and their families
+                    </div>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="#" class="btn btn-primary">RSVP</a>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600" alt="Community fair" class="card-img">
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; color: var(--text-light); font-size: 0.9rem;">
+                        <span>📅 June 10, 2024</span>
+                        <span>🕐 10:00 AM - 4:00 PM</span>
+                        <span>📍 Riverside Park</span>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Community Fair & Fundraiser</h3>
+                    <p class="card-text">A fun-filled day for the whole family! Enjoy games, food vendors, live music, and activities for kids. Learn about our programs and how you can get involved.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0; text-align: center;">
+                        <strong>Admission:</strong> Free | Activities and food available for purchase
+                    </div>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Workshop" class="card-img">
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; color: var(--text-light); font-size: 0.9rem;">
+                        <span>📅 June 25, 2024</span>
+                        <span>🕐 6:00 PM - 8:00 PM</span>
+                        <span>📍 Online Event</span>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Virtual Impact Workshop</h3>
+                    <p class="card-text">Join us online for an interactive workshop about our impact and how you can make a difference. Learn about our programs, meet our team, and discover ways to get involved.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0; text-align: center;">
+                        <strong>Free Virtual Event:</strong> Registration required
+                    </div>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="#" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600" alt="Auction" class="card-img">
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; color: var(--text-light); font-size: 0.9rem;">
+                        <span>📅 July 12, 2024</span>
+                        <span>🕐 7:00 PM - 10:00 PM</span>
+                        <span>📍 Grand Hotel Ballroom</span>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Silent Auction & Cocktail Party</h3>
+                    <p class="card-text">An elegant evening of cocktails, hors d'oeuvres, and silent auction. Bid on unique items and experiences while supporting our disaster relief programs.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0; text-align: center;">
+                        <strong>Tickets:</strong> $75 per person
+                    </div>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="#" class="btn btn-primary">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAST EVENTS ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Past Events</h2>
+                <p>Check out photos and highlights from our recent events</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400" alt="Past event" class="card-img">
+                    <h3 class="card-title" style="text-align: center;">2023 Annual Gala</h3>
+                    <p class="card-text" style="text-align: center;">Raised $250,000 for education programs</p>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="gallery.html" class="btn btn-outline">View Photos</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400" alt="Past event" class="card-img">
+                    <h3 class="card-title" style="text-align: center;">Hope Run 2023</h3>
+                    <p class="card-text" style="text-align: center;">500+ participants raised $35,000</p>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="gallery.html" class="btn btn-outline">View Photos</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400" alt="Past event" class="card-img">
+                    <h3 class="card-title" style="text-align: center;">Community Fair 2023</h3>
+                    <p class="card-text" style="text-align: center;">2,000+ attendees celebrated together</p>
+                    <div style="text-align: center; margin-top: auto;">
+                        <a href="gallery.html" class="btn btn-outline">View Photos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

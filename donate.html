@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate to Charity Hope - Support our causes and make a difference. One-time or monthly donations accepted.">
+    <title>Donate | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Donate</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(231, 76, 60, 0.9), rgba(192, 57, 43, 0.9)),
+                url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920') center/cover; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Make a Donation</h1>
+                <p>Your contribution helps us create lasting change in communities around the world</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DONATION FORM ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 50px; align-items: start;">
+                <!-- Donation Form -->
+                <div>
+                    <h2 style="margin-bottom: 30px;">Donation Information</h2>
+                    
+                    <!-- Donation Type -->
+                    <div style="margin-bottom: 30px;">
+                        <label style="font-weight: 600; margin-bottom: 15px; display: block;">Donation Type *</label>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <button class="btn" style="background: var(--primary-color); color: white; padding: 15px;">One-Time</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color); padding: 15px;">Monthly</button>
+                        </div>
+                    </div>
+
+                    <!-- Amount Selection -->
+                    <div class="form-group">
+                        <label>Donation Amount *</label>
+                        <div class="donation-amount-grid">
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$25</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$50</button>
+                            <button class="btn" style="background: var(--primary-color); color: white;">$100</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$250</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$500</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$1,000</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$2,500</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">Custom</button>
+                        </div>
+                        <input type="number" placeholder="Enter custom amount" min="1" step="0.01">
+                    </div>
+
+                    <!-- Designate to Cause -->
+                    <div class="form-group">
+                        <label for="cause">Designate to Cause (Optional)</label>
+                        <select id="cause" name="cause">
+                            <option value="">General Fund</option>
+                            <option value="education">Education</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="food">Food Security</option>
+                            <option value="shelter">Shelter & Housing</option>
+                            <option value="women">Women Empowerment</option>
+                            <option value="disaster">Disaster Relief</option>
+                            <option value="children">Children & Youth</option>
+                            <option value="elderly">Elderly Care</option>
+                        </select>
+                    </div>
+
+                    <!-- Donor Information -->
+                    <h3 style="margin: 40px 0 20px;">Donor Information</h3>
+                    <div class="form-group">
+                        <label for="donor-name">Full Name *</label>
+                        <input type="text" id="donor-name" name="donor-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-email">Email Address *</label>
+                        <input type="email" id="donor-email" name="donor-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-phone">Phone Number</label>
+                        <input type="tel" id="donor-phone" name="donor-phone">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" style="width: auto; margin-right: 10px;">
+                            Make this donation anonymous
+                        </label>
+                    </div>
+
+                    <!-- Payment Options -->
+                    <h3 style="margin: 40px 0 20px;">Payment Method</h3>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: flex; align-items: center; padding: 15px; border: 2px solid var(--primary-color); border-radius: 5px; cursor: pointer; margin-bottom: 10px;">
+                            <input type="radio" name="payment" value="card" checked style="width: auto; margin-right: 15px;">
+                            <span>💳 Credit/Debit Card</span>
+                        </label>
+                        <label style="display: flex; align-items: center; padding: 15px; border: 2px solid var(--border-color); border-radius: 5px; cursor: pointer;">
+                            <input type="radio" name="payment" value="paypal" style="width: auto; margin-right: 15px;">
+                            <span>💵 PayPal</span>
+                        </label>
+                    </div>
+
+                    <!-- Card Details -->
+                    <div class="form-group">
+                        <label for="card-number">Card Number *</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date *</label>
+                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV *</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-name">Cardholder Name *</label>
+                        <input type="text" id="billing-name" name="billing-name" required>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary btn-large" style="width: 100%; margin-top: 20px;">Complete Donation</button>
+                    <p style="margin-top: 15px; font-size: 0.9rem; color: var(--text-light); text-align: center;">
+                        🔒 Your donation is secure and encrypted. We never store your full card details.
+                    </p>
+                </div>
+
+                <!-- Donation Summary -->
+                <div>
+                    <div class="card donation-summary-card" style="position: sticky; top: 100px;">
+                        <h2 style="margin-bottom: 30px;">Donation Summary</h2>
+                        
+                        <div style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 2px solid var(--border-color);">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Donation Type:</span>
+                                <strong>One-Time</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Amount:</span>
+                                <strong style="font-size: 1.5rem; color: var(--primary-color);">$100.00</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>Designated to:</span>
+                                <strong>General Fund</strong>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 30px;">
+                            <h3 style="margin-bottom: 15px;">Your Impact</h3>
+                            <p style="margin-bottom: 15px; line-height: 1.8;">
+                                With a $100 donation, you can provide:
+                            </p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin: 10px 0; padding-left: 25px; position: relative;">
+                                    <span style="position: absolute; left: 0;">✓</span>
+                                    4 children with school supplies for a year
+                                </li>
+                                <li style="margin: 10px 0; padding-left: 25px; position: relative;">
+                                    <span style="position: absolute; left: 0;">✓</span>
+                                    10 families with emergency food packages
+                                </li>
+                                <li style="margin: 10px 0; padding-left: 25px; position: relative;">
+                                    <span style="position: absolute; left: 0;">✓</span>
+                                    2 medical consultations for those in need
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div style="background: var(--bg-light); padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                            <h4 style="margin-bottom: 10px;">Tax Deductible</h4>
+                            <p style="font-size: 0.9rem; margin: 0; color: var(--text-light);">
+                                Your donation is tax-deductible. You'll receive a receipt via email for your records.
+                            </p>
+                        </div>
+
+                        <div style="background: var(--bg-light); padding: 20px; border-radius: 8px;">
+                            <h4 style="margin-bottom: 10px;">Transparency Promise</h4>
+                            <p style="font-size: 0.9rem; margin: 0; color: var(--text-light);">
+                                85% of your donation goes directly to programs. Only 15% is used for administrative and fundraising costs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY DONATE SECTION ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Your Donation Matters</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🎯</div>
+                    <h3 class="card-title">Direct Impact</h3>
+                    <p class="card-text">85% of every dollar goes directly to programs that help people in need. We're committed to transparency and efficiency.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🌍</div>
+                    <h3 class="card-title">Global Reach</h3>
+                    <p class="card-text">Your donation supports programs in multiple countries, helping communities around the world.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">📊</div>
+                    <h3 class="card-title">Measurable Results</h3>
+                    <p class="card-text">We track and report on our impact, so you can see exactly how your donation is making a difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

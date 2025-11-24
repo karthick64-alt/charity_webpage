@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charity Hope - Making a positive impact in the lives of those in need. Support our causes, donate, or become a volunteer today.">
+    <title>Charity Hope - Home | Making a Difference Together</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Together, We Can Change Lives</h1>
+                <p>Join us in our mission to provide hope, support, and opportunities to those who need it most. Every contribution makes a difference.</p>
+                <div class="hero-buttons">
+                    <a href="donate.html" class="btn btn-large">Donate Now</a>
+                    <a href="volunteer.html" class="btn btn-large btn-outline" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">Become a Volunteer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ORGANIZATION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Organization</h2>
+                <p>We are a non-profit organization dedicated to creating positive change in communities around the world. Since our founding, we have been committed to transparency, impact, and making a real difference.</p>
+            </div>
+            <div class="grid grid-2">
+                <div>
+                    <h3 style="text-align: center;">Our Mission</h3>
+                    <p>To empower communities, support the vulnerable, and create sustainable solutions to pressing social challenges. We believe that everyone deserves access to basic needs, education, and opportunities for a better future like healthcare, food security, and shelter for the homeless people and women empowerment like microfinance, vocational training, and economic opportunities for women to become self-sufficient and independent to live a better life and disaster relief for the people who are affected by natural disasters and emergencies like floods, earthquakes, hurricanes, and pandemics like COVID-19, Ebola, and other pandemics.</p>
+                    <div style="text-align: center;">
+                        <a href="about.html" class="btn btn-primary mt-2">Learn More About Us</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800" alt="Charity volunteers helping community" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KEY CAUSES ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Key Causes</h2>
+                <p>We focus on multiple areas to create comprehensive impact in communities worldwide.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Education" class="card-img">
+                    <h3 class="card-title">Education</h3>
+                    <p class="card-text">Providing quality education and learning resources to children and adults in underserved communities.</p>
+                    <div style="text-align: center;">
+                        <a href="cause-details.html?cause=education" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/521502212/photo/doctor-holding-heart.jpg?b=1&s=612x612&w=0&k=20&c=dpgOM0RGV5sDVrQRGifZwjJ3ckUOFoTdULlgGP8ltns=" alt="Healthcare" class="card-img">
+                    <h3 class="card-title">Healthcare</h3>
+                    <p class="card-text">Ensuring access to medical care, health services, and wellness programs for those in need.</p>
+                    <div style="text-align: center;">
+                        <a href="cause-details.html?cause=healthcare" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400" alt="Food Security" class="card-img">
+                    <h3 class="card-title">Food Security</h3>
+                    <p class="card-text">Fighting hunger by providing nutritious meals and supporting sustainable food programs.</p>
+                    <div style="text-align: center;">
+                        <a href="cause-details.html?cause=food" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400" alt="Shelter" class="card-img">
+                    <h3 class="card-title">Shelter & Housing</h3>
+                    <p class="card-text">Building safe homes and providing shelter for families and individuals experiencing homelessness.</p>
+                    <div style="text-align: center;">
+                        <a href="cause-details.html?cause=shelter" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400" alt="Women Empowerment" class="card-img">
+                    <h3 class="card-title">Women Empowerment</h3>
+                    <p class="card-text">Supporting women through education, skills training, and economic opportunities like microfinance, vocational training.</p>
+                    <div style="text-align: center;">
+                        <a href="cause-details.html?cause=women" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400" alt="Disaster Relief" class="card-img">
+                    <h3 class="card-title">Disaster Relief</h3>
+                    <p class="card-text">Providing immediate aid and long-term recovery support during natural disasters and emergencies.</p>
+                    <div style="text-align: center;">
+                        <a href="cause-details.html?cause=disaster" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <a href="causes.html" class="btn btn-secondary btn-large">View All Causes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DONATION CAMPAIGN HIGHLIGHTS ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Campaigns</h2>
+                <p>Help us reach our goals for these urgent initiatives</p>
+            </div>
+            <div class="grid grid-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Emergency Education Fund" class="card-img">
+                    <h3 class="card-title">Emergency Education Fund</h3>
+                    <p class="card-text">Help us provide educational resources to 1,000 children affected by recent disasters. Your donation will provide books, supplies, and access to learning programs.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Raised:</strong> $45,000</span>
+                            <span><strong>Goal:</strong> $75,000</span>
+                        </div>
+                        <div style="background: var(--border-color); height: 10px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--primary-color); height: 100%; width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="donate.html?campaign=education" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/2219321476/photo/medical-professionals-gathering-for-a-collaborative-discussion-at-a-workplace-table.jpg?b=1&s=612x612&w=0&k=20&c=Z9LQWmFXI_mu4KGCZ8uZPtWKLnlQM3eQkThfOgc6W5s=" alt="Medical Care Initiative" class="card-img">
+                    <h3 class="card-title">Medical Care Initiative</h3>
+                    <p class="card-text">Support our mobile health clinics providing free medical care to remote communities. Every dollar helps us reach more people in need like vaccination drives, health screenings, and medical camps.</p>
+                    <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Raised:</strong> $82,500</span>
+                            <span><strong>Goal:</strong> $100,000</span>
+                        </div>
+                        <div style="background: var(--border-color); height: 10px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--primary-color); height: 100%; width: 82.5%;"></div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="donate.html?campaign=medical" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IMPACT NUMBERS ===== -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-title" style="color: white;">
+                <h2 style="color: white;">Our Impact</h2>
+                <p style="color: rgba(255,255,255,1); font-weight: 600; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">Together, we've made a real difference</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <h3>50,000+</h3>
+                    <p>People Helped</p>
+                </div>
+                <div class="impact-item">
+                    <h3>$2.5M+</h3>
+                    <p>Funds Raised</p>
+                </div>
+                <div class="impact-item">
+                    <h3>1,200+</h3>
+                    <p>Active Volunteers</p>
+                </div>
+                <div class="impact-item">
+                    <h3>150+</h3>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VOLUNTEER RECRUITMENT ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h2 style="text-align: center;">Join Our Volunteer Team</h2>
+                    <p>Volunteers are the heart of our organization. Your time and skills can make a lasting impact in the lives of others. Whether you can spare a few hours a week or want to get involved in special events, we have opportunities for everyone.</p>
+                    <ul style="list-style: disc; margin-left: 20px; margin: 20px 0 20px 20px; color: var(--text-light);">
+                        <li>Community outreach programs</li>
+                        <li>Event coordination and support</li>
+                        <li>Administrative assistance</li>
+                        <li>Skills-based volunteering (teaching, medical, legal)</li>
+                        <li>Fundraising and awareness campaigns</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <a href="volunteer.html" class="btn btn-primary btn-large">Become a Volunteer</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800" alt="Volunteers working together" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SUCCESS STORIES / TESTIMONIALS ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Success Stories</h2>
+                <p>Real stories from people whose lives we've touched</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Thanks to the education program, my daughter is now in school and excelling. This organization gave us hope when we had none."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Maria">
+                        <div>
+                            <strong>Maria Santos</strong><br>
+                            <small>Parent, Education Program</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"The medical clinic saved my life. I received treatment I couldn't afford, and the care was exceptional. Forever grateful. It was a life-changing."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="John">
+                        <div>
+                            <strong>John Thompson</strong><br>
+                            <small>Medical Care Recipient</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Volunteering here has been the most rewarding experience. I've met amazing people and seen firsthand the difference we make."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Sarah">
+                        <div>
+                            <strong>Sarah Johnson</strong><br>
+                            <small>Volunteer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LATEST BLOG ARTICLES ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest News & Updates</h2>
+                <p>Stay informed about our latest initiatives and impact stories</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Blog post" class="card-img">
+                    <h3 class="card-title">New School Opens in Rural Community</h3>
+                    <p class="card-text">We're excited to announce the opening of our newest educational facility, providing quality education to 200 children...</p>
+                    <div style="text-align: center;">
+                        <a href="blog-details.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/5214960/pexels-photo-5214960.jpeg" alt="Blog post" class="card-img">
+                    <h3 class="card-title">Mobile Health Clinic Reaches 5,000 Patients</h3>
+                    <p class="card-text">Our mobile health initiative has reached a major milestone, providing free medical care to thousands...</p>
+                    <div style="text-align: center;">
+                        <a href="blog-details.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400" alt="Blog post" class="card-img">
+                    <h3 class="card-title">Annual Volunteer Appreciation Event</h3>
+                    <p class="card-text">Join us as we celebrate our amazing volunteers who make everything possible. Learn about our upcoming event...</p>
+                    <div style="text-align: center;">
+                        <a href="blog-details.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <a href="blog.html" class="btn btn-secondary btn-large">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER SUBSCRIPTION ===== -->
+    <section class="section" style="background: var(--primary-color); color: white;">
+        <div class="container">
+            <div class="section-title" style="color: white;">
+                <h2 style="color: white;">Stay Connected</h2>
+                <p style="color: rgba(255,255,255,1); font-weight: 600; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">Subscribe to our newsletter for updates on our impact and ways to get involved</p>
+            </div>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form class="newsletter-form" style="flex-direction: column; gap: 15px;">
+                    <input type="email" placeholder="Enter your email address" required style="padding: 15px; font-size: 1.1rem;">
+                    <button type="submit" class="btn btn-large" style="background: white; color: var(--primary-color); width: 100%;">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">Support the Needy Today!</h2>
+            <p style="color: rgba(255,255,255,1); font-size: 1.2rem; font-weight: 600; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">Your contribution, no matter how small, can change someone's life. Join us in making a difference.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="donate.html" class="btn btn-large" style="background: white; color: var(--primary-color);">Donate Now</a>
+                <a href="volunteer.html" class="btn btn-large btn-outline" style="border-color: white; color: white;">Become a Volunteer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

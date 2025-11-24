@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for Charity Hope - Read our terms and conditions for using our website and services.">
+    <title>Terms of Service | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== TERMS OF SERVICE CONTENT ===== -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h1 style="margin-bottom: 30px;">Terms of Service</h1>
+                <p style="color: var(--text-light); margin-bottom: 40px;">Last updated: March 15, 2024</p>
+
+                <h2>Agreement to Terms</h2>
+                <p>By accessing and using the Charity Hope website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to these terms, please do not use our website.</p>
+
+                <h2 style="margin-top: 40px;">Use License</h2>
+                <p>Permission is granted to temporarily access the materials on Charity Hope's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+                <ul style="list-style: disc; margin-left: 30px; margin-bottom: 20px;">
+                    <li>Modify or copy the materials</li>
+                    <li>Use the materials for any commercial purpose or for any public display</li>
+                    <li>Attempt to reverse engineer any software contained on the website</li>
+                    <li>Remove any copyright or other proprietary notations from the materials</li>
+                </ul>
+
+                <h2 style="margin-top: 40px;">Donations</h2>
+                <p>All donations made through our website are final and non-refundable unless required by law. We reserve the right to refuse or return any donation at our discretion. Donations are tax-deductible to the extent allowed by law, and you will receive a receipt for your records.</p>
+
+                <h2 style="margin-top: 40px;">Volunteer Registration</h2>
+                <p>By registering as a volunteer, you agree to:</p>
+                <ul style="list-style: disc; margin-left: 30px; margin-bottom: 20px;">
+                    <li>Provide accurate and complete information</li>
+                    <li>Comply with all applicable laws and regulations</li>
+                    <li>Respect the rights and dignity of all individuals</li>
+                    <li>Follow our volunteer policies and guidelines</li>
+                </ul>
+
+                <h2 style="margin-top: 40px;">User Accounts</h2>
+                <p>If you create an account on our website, you are responsible for maintaining the security of your account and password. You agree to accept responsibility for all activities that occur under your account.</p>
+
+                <h2 style="margin-top: 40px;">Intellectual Property</h2>
+                <p>The content on this website, including text, graphics, logos, images, and software, is the property of Charity Hope or its content suppliers and is protected by copyright and other intellectual property laws.</p>
+
+                <h2 style="margin-top: 40px;">Disclaimer</h2>
+                <p>The materials on Charity Hope's website are provided on an 'as is' basis. Charity Hope makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+
+                <h2 style="margin-top: 40px;">Limitations</h2>
+                <p>In no event shall Charity Hope or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Charity Hope's website.</p>
+
+                <h2 style="margin-top: 40px;">Accuracy of Materials</h2>
+                <p>The materials appearing on Charity Hope's website could include technical, typographical, or photographic errors. Charity Hope does not warrant that any of the materials on its website are accurate, complete, or current.</p>
+
+                <h2 style="margin-top: 40px;">Links</h2>
+                <p>Charity Hope has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Charity Hope of the site.</p>
+
+                <h2 style="margin-top: 40px;">Modifications</h2>
+                <p>Charity Hope may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
+
+                <h2 style="margin-top: 40px;">Governing Law</h2>
+                <p>These terms and conditions are governed by and construed in accordance with the laws of the United States, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+
+                <h2 style="margin-top: 40px;">Contact Information</h2>
+                <p>If you have any questions about these Terms of Service, please contact us:</p>
+                <p>
+                    <strong>Charity Hope</strong><br>
+                    Email: <a href="mailto:legal@charityhope.org" style="color: var(--primary-color);">legal@charityhope.org</a><br>
+                    Phone: +1 (555) 123-4567<br>
+                    Address: 123 Charity Street, Hope City, HC 12345
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

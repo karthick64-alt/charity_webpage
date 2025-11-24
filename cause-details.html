@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about our cause and how your donation makes a difference. Support our programs and see the impact.">
+    <title>Cause Details | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="causes.html">Causes</a></li>
+                <li>Cause Details</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== CAUSE HERO ===== -->
+    <section class="section" style="padding-top: 40px;">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 50px;">
+                <div>
+                    <span style="background: var(--primary-color); color: white; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; display: inline-block; margin-bottom: 20px;">Education</span>
+                    <h1 style="font-size: 3rem; margin-bottom: 20px;">Education for All</h1>
+                    <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 30px;">Providing quality education and learning resources to children and adults in underserved communities. Building schools, training teachers, and supplying educational materials to create lasting change.</p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="donate.html?cause=education" class="btn btn-primary btn-large">Donate Now</a>
+                        <a href="volunteer.html" class="btn btn-outline btn-large">Volunteer</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800" alt="Education program" style="border-radius: 10px; box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FULL CAUSE DESCRIPTION ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h2>About This Cause</h2>
+                <p>Education is the foundation of opportunity and empowerment. Yet millions of children and adults around the world lack access to quality education. Our Education for All program addresses this critical need through comprehensive, sustainable solutions.</p>
+                
+                <h3 style="margin-top: 40px;">What We Do</h3>
+                <p>Our program focuses on multiple aspects of education:</p>
+                <ul style="list-style: none; margin: 20px 0;">
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--primary-color); font-size: 1.5rem;">✓</span>
+                        <strong>School Construction:</strong> Building safe, modern schools in underserved communities
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--primary-color); font-size: 1.5rem;">✓</span>
+                        <strong>Teacher Training:</strong> Providing professional development and support for educators
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--primary-color); font-size: 1.5rem;">✓</span>
+                        <strong>Educational Materials:</strong> Supplying books, technology, and learning resources
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--primary-color); font-size: 1.5rem;">✓</span>
+                        <strong>Scholarship Programs:</strong> Supporting students who cannot afford school fees
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--primary-color); font-size: 1.5rem;">✓</span>
+                        <strong>Adult Education:</strong> Providing literacy and skills training for adults
+                    </li>
+                </ul>
+
+                <h3 style="margin-top: 40px;">Our Impact</h3>
+                <p>Since the program's inception, we have achieved remarkable results:</p>
+                <div class="grid grid-4" style="margin: 30px 0;">
+                    <div style="text-align: center; padding: 20px; background: white; border-radius: 10px;">
+                        <h3 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 10px;">12,000+</h3>
+                        <p style="margin: 0;">Students Enrolled</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: white; border-radius: 10px;">
+                        <h3 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 10px;">45</h3>
+                        <p style="margin: 0;">Schools Built</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: white; border-radius: 10px;">
+                        <h3 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 10px;">850+</h3>
+                        <p style="margin: 0;">Teachers Trained</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: white; border-radius: 10px;">
+                        <h3 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 10px;">95%</h3>
+                        <p style="margin: 0;">Graduation Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DONATION OPTIONS ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Support This Cause</h2>
+                <p>Choose how you'd like to contribute</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">💵</div>
+                    <h3 class="card-title">One-Time Donation</h3>
+                    <p class="card-text">Make a single donation to support this cause. Every contribution makes a difference.</p>
+                    <div style="margin: 25px 0;">
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$25</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$50</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$100</button>
+                            <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$250</button>
+                        </div>
+                        <input type="number" placeholder="Custom amount" style="margin-top: 15px; text-align: center;">
+                    </div>
+                    <a href="donate.html?type=onetime&cause=education" class="btn btn-primary" style="width: 100%;">Donate Now</a>
+                </div>
+                <div class="card" style="text-align: center; border: 3px solid var(--primary-color);">
+                    <div style="background: var(--primary-color); color: white; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 15px; font-size: 0.9rem;">RECOMMENDED</div>
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🔄</div>
+                    <h3 class="card-title">Monthly Donation</h3>
+                    <p class="card-text">Become a monthly supporter and help us plan for long-term impact. Your recurring donation ensures consistent support.</p>
+                    <div style="margin: 25px 0;">
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                            <button class="btn" style="background: var(--primary-color); color: white;">$25/mo</button>
+                            <button class="btn" style="background: var(--primary-color); color: white;">$50/mo</button>
+                            <button class="btn" style="background: var(--primary-color); color: white;">$100/mo</button>
+                            <button class="btn" style="background: var(--primary-color); color: white;">$250/mo</button>
+                        </div>
+                        <input type="number" placeholder="Custom amount" style="margin-top: 15px; text-align: center;">
+                    </div>
+                    <a href="donate.html?type=monthly&cause=education" class="btn btn-primary" style="width: 100%;">Start Monthly Giving</a>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🎁</div>
+                    <h3 class="card-title">Sponsor a Student</h3>
+                    <p class="card-text">Sponsor a specific student's education for a year. Receive updates on their progress and make a direct impact.</p>
+                    <div style="margin: 25px 0; padding: 20px; background: var(--bg-light); border-radius: 8px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">$500/year</h3>
+                        <p style="margin: 0; font-size: 0.9rem;">Covers tuition, books, and supplies</p>
+                    </div>
+                    <a href="donate.html?type=sponsor&cause=education" class="btn btn-primary" style="width: 100%;">Sponsor Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IMAGE GALLERY ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Program Gallery</h2>
+                <p>See our education programs in action</p>
+            </div>
+            <div class="grid grid-3">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 250px; object-fit: cover;">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 250px; object-fit: cover;">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 250px; object-fit: cover;">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 250px; object-fit: cover;">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 250px; object-fit: cover;">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 250px; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROGRAM BUDGET BREAKDOWN ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Budget Transparency</h2>
+                <p>See exactly how your donation is used</p>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card">
+                    <h3>Program Budget Breakdown</h3>
+                    <p style="margin-bottom: 30px;">For every $100 donated to the Education for All program:</p>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>School Construction & Maintenance</strong></span>
+                            <strong>$35</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--primary-color); height: 100%; width: 35%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Teacher Salaries & Training</strong></span>
+                            <strong>$30</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--primary-color); height: 100%; width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Educational Materials & Supplies</strong></span>
+                            <strong>$20</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--accent-color); height: 100%; width: 20%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Scholarships & Student Support</strong></span>
+                            <strong>$10</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--success-color); height: 100%; width: 10%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Program Administration</strong></span>
+                            <strong>$5</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--text-light); height: 100%; width: 5%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQs ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card" style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 10px;">How is my donation used?</h3>
+                    <p style="margin: 0;">85% of your donation goes directly to program activities, including school construction, teacher training, and educational materials. Only 15% is used for administrative and fundraising costs.</p>
+                </div>
+                <div class="card" style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 10px;">Can I sponsor a specific student?</h3>
+                    <p style="margin: 0;">Yes! Our student sponsorship program allows you to sponsor a specific child's education for $500 per year. You'll receive regular updates on their progress.</p>
+                </div>
+                <div class="card" style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 10px;">Where are the schools located?</h3>
+                    <p style="margin: 0;">We operate schools in underserved communities across multiple countries. You can specify a region when making your donation if you have a preference.</p>
+                </div>
+                <div class="card" style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 10px;">How can I volunteer with this program?</h3>
+                    <p style="margin: 0;">We welcome volunteers with teaching experience, construction skills, or a passion for education. Visit our volunteer page to learn more and apply.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 10px;">Is my donation tax-deductible?</h3>
+                    <p style="margin: 0;">Yes, Charity Hope is a registered 501(c)(3) non-profit organization. All donations are tax-deductible to the extent allowed by law. You'll receive a receipt for your records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RELATED CAUSES ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Related Causes</h2>
+                <p>You might also be interested in these programs</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400" alt="Children" class="card-img">
+                    <h3 class="card-title">Children & Youth Programs</h3>
+                    <p class="card-text">Supporting children through mentorship and after-school programs.</p>
+                    <a href="cause-details.html?cause=children" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400" alt="Women" class="card-img">
+                    <h3 class="card-title">Women Empowerment</h3>
+                    <p class="card-text">Supporting women through education and economic opportunities.</p>
+                    <a href="cause-details.html?cause=women" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400" alt="Food" class="card-img">
+                    <h3 class="card-title">Food Security</h3>
+                    <p class="card-text">Fighting hunger through nutritious meals and food programs.</p>
+                    <a href="cause-details.html?cause=food" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

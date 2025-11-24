@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Charity Hope - our mission, vision, values, history, and the team dedicated to making a difference.">
+    <title>About Us | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Highlight active menu after header is loaded
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(46, 204, 113, 0.9)),
+                url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920') center/cover; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>About Charity Hope</h1>
+                <p>Dedicated to creating positive change and empowering communities worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT THE CHARITY / HISTORY ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; margin-bottom: 60px;">
+                <div>
+                    <h2>Our Story</h2>
+                    <p>Charity Hope was founded in 2010 with a simple yet powerful vision: to create a world where everyone has access to basic needs, opportunities, and hope for a better future. What started as a small local initiative has grown into a global movement, touching the lives of over 50,000 people across multiple countries.</p>
+                    <p>Our journey began when our founders witnessed firsthand the struggles faced by vulnerable communities. They realized that sustainable change requires more than just temporary aid—it requires comprehensive programs, community engagement, and long-term commitment.</p>
+                    <p>Today, we continue to expand our reach while maintaining our core values of transparency, integrity, and impact. Every project we undertake is designed with sustainability and community empowerment at its heart.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=600&fit=crop" alt="Our team helping community" style="border-radius: 10px; width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSION, VISION & VALUES ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mission, Vision & Values</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🎯</div>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">To empower communities, support the vulnerable, and create sustainable solutions to pressing social challenges. We are committed to providing access to education, healthcare, food security, and opportunities for a better future.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">👁️</div>
+                    <h3 class="card-title">Our Vision</h3>
+                    <p class="card-text">A world where every person has the opportunity to thrive, regardless of their circumstances. We envision communities that are self-sustaining, resilient, and filled with hope for the future.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">❤️</div>
+                    <h3 class="card-title">Our Values</h3>
+                    <p class="card-text">Compassion, Integrity, Transparency, Empowerment, and Collaboration. These core values guide every decision we make and every action we take in service of our mission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEADERSHIP TEAM ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Leadership Team</h2>
+                <p>Meet the dedicated individuals leading our mission</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="John Smith" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; display: block;">
+                    <h3 class="card-title">John Smith</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;">Executive Director</p>
+                    <p class="card-text" style="font-size: 0.9rem;">With over 20 years of experience in non-profit leadership, John brings strategic vision and passion to our organization.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=face" alt="Sarah Johnson" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; display: block;">
+                    <h3 class="card-title">Sarah Johnson</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;">Program Director</p>
+                    <p class="card-text" style="font-size: 0.9rem;">Sarah oversees all program operations, ensuring our initiatives create maximum impact in the communities we serve.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Michael Chen" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; display: block;">
+                    <h3 class="card-title">Michael Chen</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;">Finance Director</p>
+                    <p class="card-text" style="font-size: 0.9rem;">Michael ensures financial transparency and accountability, managing resources to maximize program effectiveness.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" alt="Emily Davis" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; display: block;">
+                    <h3 class="card-title">Emily Davis</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;">Outreach Director</p>
+                    <p class="card-text" style="font-size: 0.9rem;">Emily builds relationships with communities and partners, ensuring our programs are community-driven and sustainable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ORGANIZATION TIMELINE ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey</h2>
+                <p>Key milestones in our organization's history</p>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="position: relative; padding-left: 40px;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--primary-color);"></div>
+                    
+                    <div style="position: relative; margin-bottom: 40px;">
+                        <div style="position: absolute; left: -48px; top: 5px; width: 15px; height: 15px; background: var(--primary-color); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 3px var(--primary-color);"></div>
+                        <div class="card">
+                            <h3>2010 - Foundation</h3>
+                            <p>Charity Hope was founded with a mission to help local communities in need. Started with our first education program serving 50 children.</p>
+                        </div>
+                    </div>
+
+                    <div style="position: relative; margin-bottom: 40px;">
+                        <div style="position: absolute; left: -48px; top: 5px; width: 15px; height: 15px; background: var(--primary-color); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 3px var(--primary-color);"></div>
+                        <div class="card">
+                            <h3>2013 - Expansion</h3>
+                            <p>Expanded to healthcare programs and opened our first medical clinic. Reached 1,000 people with essential health services.</p>
+                        </div>
+                    </div>
+
+                    <div style="position: relative; margin-bottom: 40px;">
+                        <div style="position: absolute; left: -48px; top: 5px; width: 15px; height: 15px; background: var(--primary-color); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 3px var(--primary-color);"></div>
+                        <div class="card">
+                            <h3>2016 - International Reach</h3>
+                            <p>Launched our first international programs, extending our impact to communities across three countries. 5,000 people helped.</p>
+                        </div>
+                    </div>
+
+                    <div style="position: relative; margin-bottom: 40px;">
+                        <div style="position: absolute; left: -48px; top: 5px; width: 15px; height: 15px; background: var(--primary-color); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 3px var(--primary-color);"></div>
+                        <div class="card">
+                            <h3>2019 - Disaster Response</h3>
+                            <p>Established our emergency response division, providing rapid aid during natural disasters. Responded to 10 major emergencies.</p>
+                        </div>
+                    </div>
+
+                    <div style="position: relative;">
+                        <div style="position: absolute; left: -48px; top: 5px; width: 15px; height: 15px; background: var(--primary-color); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 3px var(--primary-color);"></div>
+                        <div class="card">
+                            <h3>2024 - Today</h3>
+                            <p>Celebrating 50,000+ lives impacted, $2.5M+ raised, and 1,200+ active volunteers. Continuing to grow and expand our programs worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AWARDS / RECOGNITION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Awards & Recognition</h2>
+                <p>Honored for our commitment to excellence and impact</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🏆</div>
+                    <h3 class="card-title">Excellence in Non-Profit Management</h3>
+                    <p class="card-text">Awarded by the International Charity Association (2023)</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">⭐</div>
+                    <h3 class="card-title">Top Rated Charity</h3>
+                    <p class="card-text">Recognized by Charity Navigator for transparency and impact (2022-2024)</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">💎</div>
+                    <h3 class="card-title">Community Impact Award</h3>
+                    <p class="card-text">Honored by the Global Community Foundation for outstanding service (2023)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DONORS / PARTNERS LOGOS ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Partners & Supporters</h2>
+                <p>We are grateful for the organizations and individuals who support our mission. Together, we create lasting change in communities around the world.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <!-- Partner 1: Global Foundation -->
+                <div class="card" style="text-align: center; padding: 30px; background: white; border-radius: 10px; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                    <div style="margin-bottom: 20px; min-height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=100&fit=crop" alt="Global Foundation Logo" style="max-width: 100%; height: auto; object-fit: contain; filter: grayscale(100%) opacity(0.7); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'; this.style.transform='scale(1.05)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'; this.style.transform='scale(1)'">
+                    </div>
+                    <h3 style="margin-bottom: 10px; color: var(--text-dark); font-size: 1.3rem;">Global Foundation</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">A leading international foundation dedicated to poverty alleviation and sustainable development. They have been our strategic partner since 2015.</p>
+                    <div style="background: var(--bg-light); padding: 10px; border-radius: 5px; margin-top: 15px;">
+                        <small style="color: var(--primary-color); font-weight: 600;">Primary Sponsor • Education Programs</small>
+                    </div>
+                </div>
+
+                <!-- Partner 2: Hope Corporation -->
+                <div class="card" style="text-align: center; padding: 30px; background: white; border-radius: 10px; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                    <div style="margin-bottom: 20px; min-height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=200&h=100&fit=crop" alt="Hope Corporation Logo" style="max-width: 100%; height: auto; object-fit: contain; filter: grayscale(100%) opacity(0.7); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'; this.style.transform='scale(1.05)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'; this.style.transform='scale(1)'">
+                    </div>
+                    <h3 style="margin-bottom: 10px; color: var(--text-dark); font-size: 1.3rem;">Hope Corporation</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">A corporate partner committed to corporate social responsibility. They provide funding for healthcare initiatives and disaster relief programs.</p>
+                    <div style="background: var(--bg-light); padding: 10px; border-radius: 5px; margin-top: 15px;">
+                        <small style="color: var(--primary-color); font-weight: 600;">Corporate Partner • Healthcare & life Relief</small>
+                    </div>
+                </div>
+
+                <!-- Partner 3: Community Trust -->
+                <div class="card" style="text-align: center; padding: 30px; background: white; border-radius: 10px; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                    <div style="margin-bottom: 20px; min-height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=100&fit=crop" alt="Community Trust Logo" style="max-width: 100%; height: auto; object-fit: contain; filter: grayscale(100%) opacity(0.7); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'; this.style.transform='scale(1.05)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'; this.style.transform='scale(1)'">
+                    </div>
+                    <h3 style="margin-bottom: 10px; color: var(--text-dark); font-size: 1.3rem;">Community Trust</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">A community-based organization focused on local empowerment and grassroots development. They help us connect with communities in need.</p>
+                    <div style="background: var(--bg-light); padding: 10px; border-radius: 5px; margin-top: 15px;">
+                        <small style="color: var(--primary-color); font-weight: 600;">Community Partner • Local Programs</small>
+                    </div>
+                </div>
+
+                <!-- Partner 4: United Charities Alliance -->
+                <div class="card" style="text-align: center; padding: 30px; background: white; border-radius: 10px; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                    <div style="margin-bottom: 20px; min-height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=200&h=100&fit=crop" alt="United Charities Alliance Logo" style="max-width: 100%; height: auto; object-fit: contain; filter: grayscale(100%) opacity(0.7); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'; this.style.transform='scale(1.05)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'; this.style.transform='scale(1)'">
+                    </div>
+                    <h3 style="margin-bottom: 10px; color: var(--text-dark); font-size: 1.3rem;">United Charities Alliance</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">An alliance of charitable organizations working together to maximize impact. They support our food security and shelter programs.</p>
+                    <div style="background: var(--bg-light); padding: 10px; border-radius: 5px; margin-top: 15px;">
+                        <small style="color: var(--primary-color); font-weight: 600;">Alliance Partner • Food & Shelter Programs</small>
+                    </div>
+                </div>
+
+                <!-- Partner 5: Impact Partners -->
+                <div class="card" style="text-align: center; padding: 30px; background: white; border-radius: 10px; box-shadow: var(--shadow); transition: var(--transition);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                    <div style="margin-bottom: 20px; min-height: 100px; display: flex; align-items: center; justify-content: center;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop" alt="Impact Partners Logo" style="max-width: 100%; height: auto; object-fit: contain; filter: grayscale(100%) opacity(0.7); transition: all 0.3s;" onmouseover="this.style.filter='grayscale(0%) opacity(1)'; this.style.transform='scale(1.05)'" onmouseout="this.style.filter='grayscale(100%) opacity(0.7)'; this.style.transform='scale(1)'">
+                    </div>
+                    <h3 style="margin-bottom: 10px; color: var(--text-dark); font-size: 1.3rem;">Impact Partners</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">A funding organization specializing in impact measurement and program evaluation. They help us track and improve our effectiveness to make a real difference.</p>
+                    <div style="background: var(--bg-light); padding: 10px; border-radius: 5px; margin-top: 15px;">
+                        <small style="color: var(--primary-color); font-weight: 600;">Impact Partner • Monitoring & Evaluation</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Note -->
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: white; border-radius: 10px; box-shadow: var(--shadow);">
+                <h3 style="margin-bottom: 15px; color: var(--text-dark);">Become a Partner</h3>
+                <p style="color: var(--text-light); margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">We're always looking for new partners who share our vision of creating positive change. Whether you're a corporation, foundation, or individual donor, we'd love to work with you.</p>
+                <a href="contact.html" class="btn btn-primary">Partner With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS / COMMUNITY VOICES ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Community Voices</h2>
+                <p>What people are saying about Charity Hope</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Charity Hope doesn't just provide aid—they empower communities. Their programs have transformed."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="David Wilson" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; display: block;">
+                        <div>
+                            <strong>David Wilson</strong><br>
+                            <small>Community Leader</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"As a donor, I appreciate their transparency and the real impact they make. Every dollar is used effectively."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Lisa Anderson" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; display: block;">
+                        <div>
+                            <strong>Lisa Anderson</strong><br>
+                            <small>Major Donor</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Volunteering with Charity Hope has been life-changing. I've seen firsthand how they change lives."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face" alt="Robert Taylor" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; display: block;">
+                        <div>
+                            <strong>Robert Taylor</strong><br>
+                            <small>Long-term Volunteer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRANSPARENCY SECTION ===== -->
+    <section id="transparency" class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Financial Transparency</h2>
+                <p>We believe in complete transparency about how we use donations</p>
+            </div>
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h3>How We Use Your Donations</h3>
+                    <p>We are committed to using your donations efficiently and effectively. Here's how every dollar is allocated:</p>
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Programs & Services</strong></span>
+                            <strong>85%</strong>
+                        </div>
+                        <div style="background: var(--border-color); height: 30px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--success-color); height: 100%; width: 85%; display: flex; align-items: center; padding-left: 10px; color: white; font-weight: 600;">$2,125,000</div>
+                        </div>
+                    </div>
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Administrative Costs</strong></span>
+                            <strong>10%</strong>
+                        </div>
+                        <div style="background: var(--border-color); height: 30px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--accent-color); height: 100%; width: 10%; display: flex; align-items: center; padding-left: 10px; color: white; font-weight: 600;">$250,000</div>
+                        </div>
+                    </div>
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span><strong>Fundraising</strong></span>
+                            <strong>5%</strong>
+                        </div>
+                        <div style="background: var(--border-color); height: 30px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--primary-color); height: 100%; width: 5%; display: flex; align-items: center; padding-left: 10px; color: white; font-weight: 600;">$125,000</div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 30px; font-size: 0.9rem; color: var(--text-light);">*Based on 2023 financial reports. Full audited financial statements available upon request.</p>
+                </div>
+                <div>
+                    <div class="card">
+                        <h3>Annual Reports</h3>
+                        <p>Download our annual reports to see detailed financial information and program impact:</p>
+                        <ul style="list-style: none; margin: 20px 0;">
+                            <li style="margin: 15px 0; padding: 15px; background: var(--bg-light); border-radius: 5px;">
+                                <strong>2023 Annual Report</strong>
+                                <a href="#" class="btn btn-outline" style="float: right; padding: 5px 15px; font-size: 0.9rem;">Download PDF</a>
+                            </li>
+                            <li style="margin: 15px 0; padding: 15px; background: var(--bg-light); border-radius: 5px;">
+                                <strong>2022 Annual Report</strong>
+                                <a href="#" class="btn btn-outline" style="float: right; padding: 5px 15px; font-size: 0.9rem;">Download PDF</a>
+                            </li>
+                            <li style="margin: 15px 0; padding: 15px; background: var(--bg-light); border-radius: 5px;">
+                                <strong>2021 Annual Report</strong>
+                                <a href="#" class="btn btn-outline" style="float: right; padding: 5px 15px; font-size: 0.9rem;">Download PDF</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+

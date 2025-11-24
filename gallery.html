@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo and video gallery showcasing our programs, events, and impact stories.">
+    <title>Gallery | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(46, 204, 113, 0.9)),
+                url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920') center/cover; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Gallery</h1>
+                <p>Photos and videos from our programs, events, and impact stories</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY FILTERS ===== -->
+    <section class="section" style="background: var(--bg-light); padding: 40px 0;">
+        <div class="container">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <button class="btn" style="background: var(--primary-color); color: white;">All</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">Programs</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">Events</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">Volunteers</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">Community</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">Videos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PHOTO GALLERY ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400" alt="Gallery" style="border-radius: 10px; height: 300px; object-fit: cover; cursor: pointer;">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VIDEO GALLERY ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Videos</h2>
+                <p>Watch our impact stories and program highlights</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <div style="width: 100%; height: 250px; background: var(--border-color); position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">▶️</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 class="card-title">Education Program Impact</h3>
+                        <p class="card-text" style="font-size: 0.9rem;">See how our education programs are transforming lives</p>
+                    </div>
+                </div>
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <div style="width: 100%; height: 250px; background: var(--border-color); position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">▶️</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 class="card-title">Volunteer Stories</h3>
+                        <p class="card-text" style="font-size: 0.9rem;">Hear from our volunteers about their experiences</p>
+                    </div>
+                </div>
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <div style="width: 100%; height: 250px; background: var(--border-color); position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">▶️</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 class="card-title">2023 Annual Report</h3>
+                        <p class="card-text" style="font-size: 0.9rem;">A visual summary of our impact in 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

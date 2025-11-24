@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read our latest blog articles, news, and updates about our charity work, impact stories, and ways to get involved.">
+    <title>Blog | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(46, 204, 113, 0.9), rgba(52, 152, 219, 0.9)),
+                url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920') center/cover; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Blog</h1>
+                <p>Stories, updates, and insights from our work around the world</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEARCH & FILTERS ===== -->
+    <section class="section" style="background: var(--bg-light); padding: 40px 0;">
+        <div class="container">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <div style="flex: 1; max-width: 500px;">
+                    <input type="text" placeholder="Search articles..." style="width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 5px; font-size: 1rem;">
+                </div>
+                <div>
+                    <label style="font-weight: 600; margin-right: 10px;">Category:</label>
+                    <select style="padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 5px; font-size: 1rem; cursor: pointer;">
+                        <option value="all">All Categories</option>
+                        <option value="news">News</option>
+                        <option value="stories">Success Stories</option>
+                        <option value="updates">Program Updates</option>
+                        <option value="volunteer">Volunteer Spotlight</option>
+                        <option value="impact">Impact Reports</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-weight: 600; margin-right: 10px;">Tags:</label>
+                    <select style="padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 5px; font-size: 1rem; cursor: pointer;">
+                        <option value="all">All Tags</option>
+                        <option value="education">Education</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="disaster">Disaster Relief</option>
+                        <option value="community">Community</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG GRID ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+                <!-- Blog Post 1 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Blog post" class="card-img">
+                    <div style="display: flex; gap: 15px; margin: 15px 0; font-size: 0.9rem; color: var(--text-light);">
+                        <span>📅 March 15, 2024</span>
+                        <span>👤 Admin</span>
+                    </div>
+                    <span style="background: var(--primary-color); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin-bottom: 15px;">News</span>
+                    <h3 class="card-title">New School Opens in Rural Community</h3>
+                    <p class="card-text">We're excited to announce the opening of our newest educational facility, providing quality education to 200 children in a previously underserved area. The school features modern classrooms, a library, and computer lab...</p>
+                    <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Education</span>
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Community</span>
+                    </div>
+                    <a href="blog-details.html" class="btn btn-outline" style="margin-top: 20px; width: 100%;">Read More</a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="card">
+                    <img src="https://images.pexels.com/photos/5207114/pexels-photo-5207114.jpeg" alt="Blog post" class="card-img">
+                    <div style="display: flex; gap: 15px; margin: 15px 0; font-size: 0.9rem; color: var(--text-light);">
+                        <span>📅 March 10, 2024</span>
+                        <span>👤 Admin</span>
+                    </div>
+                    <span style="background: var(--primary-color); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin-bottom: 15px;">Program Updates</span>
+                    <h3 class="card-title">Mobile Health Clinic Reaches 5,000 Patients</h3>
+                    <p class="card-text">Our mobile health initiative has reached a major milestone, providing free medical care to thousands of people in remote communities. This achievement represents months of dedicated work by our medical team...</p>
+                    <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Healthcare</span>
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Impact</span>
+                    </div>
+                    <a href="blog-details.html" class="btn btn-outline" style="margin-top: 20px; width: 100%;">Read More</a>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400" alt="Blog post" class="card-img">
+                    <div style="display: flex; gap: 15px; margin: 15px 0; font-size: 0.9rem; color: var(--text-light);">
+                        <span>📅 March 5, 2024</span>
+                        <span>👤 Admin</span>
+                    </div>
+                    <span style="background: var(--accent-color); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin-bottom: 15px;">Volunteer Spotlight</span>
+                    <h3 class="card-title">Annual Volunteer Appreciation Event</h3>
+                    <p class="card-text">Join us as we celebrate our amazing volunteers who make everything possible. Learn about our upcoming appreciation event and hear inspiring stories from volunteers who have dedicated their time to help the community and the people..</p>
+                    <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Volunteer</span>
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Community</span>
+                    </div>
+                    <a href="blog-details.html" class="btn btn-outline" style="margin-top: 20px; width: 100%;">Read More</a>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="card">
+                    <img src="https://images.pexels.com/photos/34789608/pexels-photo-34789608.jpeg" alt="Blog post" class="card-img">
+                    <div style="display: flex; gap: 15px; margin: 15px 0; font-size: 0.9rem; color: var(--text-light);">
+                        <span>📅 February 28, 2024</span>
+                        <span>👤 Admin</span>
+                    </div>
+                    <span style="background: var(--success-color); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin-bottom: 15px;">Success Stories</span>
+                    <h3 class="card-title">From Homeless to Homeowner: Maria's Story</h3>
+                    <p class="card-text">Maria's journey from homelessness to homeownership is a testament to resilience and the power of community support. Through our housing program, she found not just a home, but hope for the future...</p>
+                    <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Success</span>
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Housing</span>
+                    </div>
+                    <a href="blog-details.html" class="btn btn-outline" style="margin-top: 20px; width: 100%;">Read More</a>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400" alt="Blog post" class="card-img">
+                    <div style="display: flex; gap: 15px; margin: 15px 0; font-size: 0.9rem; color: var(--text-light);">
+                        <span>📅 February 20, 2024</span>
+                        <span>👤 Admin</span>
+                    </div>
+                    <span style="background: var(--primary-color); color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin-bottom: 15px;">Impact Reports</span>
+                    <h3 class="card-title">2023 Annual Impact Report Released</h3>
+                    <p class="card-text">We're proud to share our 2023 Annual Impact Report, detailing the incredible progress we've made together. From education to healthcare, see how your support has transformed lives...</p>
+                    <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Impact</span>
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Report</span>
+                    </div>
+                    <a href="blog-details.html" class="btn btn-outline" style="margin-top: 20px; width: 100%;">Read More</a>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400" alt="Blog post" class="card-img">
+                    <div style="display: flex; gap: 15px; margin: 15px 0; font-size: 0.9rem; color: var(--text-light);">
+                        <span>📅 February 15, 2024</span>
+                        <span>👤 Admin</span>
+                    </div>
+                    <span style="background: #e91e63; color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin-bottom: 15px;">News</span>
+                    <h3 class="card-title">Women's Empowerment Program Launches</h3>
+                    <p class="card-text">We're thrilled to announce the launch of our new Women's Empowerment Program, providing skills training, microfinance opportunities, and leadership development for women in underserved communities...</p>
+                    <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Women</span>
+                        <span style="background: var(--bg-light); padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">#Empowerment</span>
+                    </div>
+                    <a href="blog-details.html" class="btn btn-outline" style="margin-top: 20px; width: 100%;">Read More</a>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" style="display: flex; justify-content: center; gap: 10px; margin-top: 50px;">
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">Previous</button>
+                <button class="btn btn-primary">1</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">2</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">3</button>
+                <button class="btn" style="background: var(--bg-light); border: 2px solid var(--border-color);">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RECENT POSTS SIDEBAR (Alternative Layout) ===== -->
+    <section class="section" style="background: var(--bg-light); display: none;">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="grid-3" style="grid-column: span 3;">
+                    <!-- Main blog content would go here -->
+                </div>
+                <div>
+                    <div class="card">
+                        <h3>Recent Posts</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 15px 0; border-bottom: 1px solid var(--border-color);">
+                                <a href="#" style="font-weight: 600;">New School Opens in Rural Community</a>
+                                <p style="font-size: 0.9rem; color: var(--text-light); margin: 5px 0 0 0;">March 15, 2024</p>
+                            </li>
+                            <li style="padding: 15px 0; border-bottom: 1px solid var(--border-color);">
+                                <a href="#" style="font-weight: 600;">Mobile Health Clinic Reaches 5,000 Patients</a>
+                                <p style="font-size: 0.9rem; color: var(--text-light); margin: 5px 0 0 0;">March 10, 2024</p>
+                            </li>
+                            <li style="padding: 15px 0;">
+                                <a href="#" style="font-weight: 600;">Annual Volunteer Appreciation Event</a>
+                                <p style="font-size: 0.9rem; color: var(--text-light); margin: 5px 0 0 0;">March 5, 2024</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

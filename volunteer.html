@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Become a volunteer with Charity Hope. Join our team and make a difference in communities around the world.">
+    <title>Volunteer | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Volunteer</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(46, 204, 113, 0.9), rgba(52, 152, 219, 0.9)),
+                url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920') center/cover; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Become a Volunteer</h1>
+                <p>Join our team and make a meaningful difference in the lives of others</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VOLUNTEER OPPORTUNITIES ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Volunteer Opportunities</h2>
+                <p>We have various ways you can get involved and contribute your time and skills</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 20px; text-align: center;">👥</div>
+                    <h3 class="card-title" style="text-align: center;">Community Outreach</h3>
+                    <p class="card-text">Help us connect with communities, organize events, and spread awareness about our programs. Perfect for people who love meeting new people and making connections.</p>
+                    <ul style="list-style: none; margin: 20px 0; padding: 0;">
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Event coordination
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Community visits
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Awareness campaigns
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 20px; text-align: center;">💻</div>
+                    <h3 class="card-title" style="text-align: center;">Administrative Support</h3>
+                    <p class="card-text">Help with office tasks, data entry, communications, and organizational support. Ideal for those who prefer behind-the-scenes work.</p>
+                    <ul style="list-style: none; margin: 20px 0; padding: 0;">
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Data entry
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Phone calls
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Email management
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 20px; text-align: center;">🎓</div>
+                    <h3 class="card-title" style="text-align: center;">Skills-Based Volunteering</h3>
+                    <p class="card-text">Use your professional skills to make an impact. We need teachers, medical professionals, lawyers, marketers, and more.</p>
+                    <ul style="list-style: none; margin: 20px 0; padding: 0;">
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Teaching & tutoring
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Medical services
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Legal assistance
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 20px; text-align: center;">🎉</div>
+                    <h3 class="card-title" style="text-align: center;">Event Support</h3>
+                    <p class="card-text">Help organize and run fundraising events, community gatherings, and special programs. Great for event planning enthusiasts.</p>
+                    <ul style="list-style: none; margin: 20px 0; padding: 0;">
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Event planning
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Day-of support
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Fundraising
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 20px; text-align: center;">🌍</div>
+                    <h3 class="card-title" style="text-align: center;">Field Work</h3>
+                    <p class="card-text">Get hands-on experience in the field, working directly with communities on program implementation and support.</p>
+                    <ul style="list-style: none; margin: 20px 0; padding: 0;">
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Program delivery
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Community support
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Direct service
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 20px; text-align: center;">📱</div>
+                    <h3 class="card-title" style="text-align: center;">Digital & Social Media</h3>
+                    <p class="card-text">Help us spread our message online through social media management, content creation, and digital marketing.</p>
+                    <ul style="list-style: none; margin: 20px 0; padding: 0;">
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Social media
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Content creation
+                        </li>
+                        <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Graphic design
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VOLUNTEER REGISTRATION FORM ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Volunteer Registration</h2>
+                <p>Fill out the form below to get started</p>
+            </div>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <form class="card" style="padding: 30px;">
+                    <h3 style="margin-bottom: 20px; text-align: center; font-size: 1.5rem;">Personal Information</h3>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="vol-name">Full Name *</label>
+                        <input type="text" id="vol-name" name="vol-name" required>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="vol-email">Email Address *</label>
+                            <input type="email" id="vol-email" name="vol-email" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="vol-phone">Phone Number *</label>
+                            <input type="tel" id="vol-phone" name="vol-phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="vol-address">Address</label>
+                        <input type="text" id="vol-address" name="vol-address">
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="vol-city">City</label>
+                            <input type="text" id="vol-city" name="vol-city">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="vol-zip">ZIP Code</label>
+                            <input type="text" id="vol-zip" name="vol-zip">
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 25px 0 15px; text-align: center; font-size: 1.5rem;">Volunteer Interests</h3>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="vol-interest">Area of Interest *</label>
+                        <select id="vol-interest" name="vol-interest" required>
+                            <option value="">Select an area</option>
+                            <option value="outreach">Community Outreach</option>
+                            <option value="admin">Administrative Support</option>
+                            <option value="skills">Skills-Based Volunteering</option>
+                            <option value="events">Event Support</option>
+                            <option value="field">Field Work</option>
+                            <option value="digital">Digital & Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="vol-availability">Availability *</label>
+                        <select id="vol-availability" name="vol-availability" required>
+                            <option value="">Select availability</option>
+                            <option value="weekdays">Weekdays</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="evenings">Evenings</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="vol-hours">Hours per Week</label>
+                        <input type="number" id="vol-hours" name="vol-hours" min="1" max="40" placeholder="e.g., 5">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="vol-skills">Skills & Experience</label>
+                        <textarea id="vol-skills" name="vol-skills" rows="3" placeholder="Tell us about your skills, experience, and what you'd like to contribute..."></textarea>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="vol-why">Why do you want to volunteer with us? *</label>
+                        <textarea id="vol-why" name="vol-why" rows="3" required placeholder="Share your motivation..."></textarea>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label style="font-size: 0.9rem;">
+                            <input type="checkbox" required style="width: auto; margin-right: 8px;">
+                            I agree to the <a href="terms.html" style="color: var(--primary-color);">Terms and Conditions</a> and <a href="privacy.html" style="color: var(--primary-color);">Privacy Policy</a> *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VOLUNTEER BENEFITS ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of Volunteering</h2>
+            </div>
+            <div class="grid grid-4">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">💼</div>
+                    <h3>Skill Development</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Gain valuable experience and develop new skills</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🤝</div>
+                    <h3>Networking</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Meet like-minded people and build connections</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">❤️</div>
+                    <h3>Make a Difference</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">See the direct impact of your contribution</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🎓</div>
+                    <h3>Training & Support</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Receive training and ongoing support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

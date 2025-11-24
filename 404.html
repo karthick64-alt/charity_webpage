@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Charity Hope</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- ===== 404 SECTION ===== -->
+    <section class="section" style="padding: 150px 0; text-align: center;">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div style="font-size: 8rem; font-weight: 700; color: var(--primary-color); margin-bottom: 20px; line-height: 1;">404</div>
+                <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Page Not Found</h1>
+                <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 40px;">
+                    Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect.
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html" class="btn btn-primary btn-large">Go to Homepage</a>
+                    <a href="javascript:history.back()" class="btn btn-outline btn-large">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HELPFUL LINKS ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Maybe You're Looking For:</h2>
+            </div>
+            <div class="grid grid-4">
+                <a href="index.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🏠</div>
+                    <h3>Home</h3>
+                </a>
+                <a href="causes.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">❤️</div>
+                    <h3>Our Causes</h3>
+                </a>
+                <a href="donate.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">💵</div>
+                    <h3>Donate</h3>
+                </a>
+                <a href="contact.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">📧</div>
+                    <h3>Contact Us</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disaster Relief Charity - Providing immediate aid and long-term recovery support during emergencies. Donate now to help those in crisis.">
+    <title>Disaster Relief | Emergency Aid & Recovery Support</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/active-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                if (window.highlightActiveMenu) {
+                    setTimeout(window.highlightActiveMenu, 100);
+                }
+                if (window.initMobileMenu) {
+                    setTimeout(window.initMobileMenu, 100);
+                }
+            });
+    </script>
+
+    <!-- ===== ISSUE-FOCUSED HERO BANNER ===== -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(231, 76, 60, 0.95), rgba(192, 57, 43, 0.95)),
+                url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1920') center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Emergency Disaster Relief</h1>
+                <p>When disaster strikes, every second counts. Help us provide immediate aid, shelter, food, and medical care to those affected by natural disasters and emergencies.</p>
+                <div class="hero-buttons">
+                    <a href="donate.html?type=emergency" class="btn btn-large">Donate to Emergency Fund</a>
+                    <a href="volunteer.html" class="btn btn-large btn-outline" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">Join Relief Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED EMERGENCY CAMPAIGN ===== -->
+    <section class="section" style="background: #fff3cd; border-top: 4px solid var(--primary-color);">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <span style="background: var(--primary-color); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">🚨 URGENT</span>
+                    <h2 style="margin-top: 15px;">Hurricane Relief Fund - Immediate Action Needed</h2>
+                    <p style="font-size: 1.1rem; margin: 20px 0;">Thousands of families have lost their homes and need immediate assistance. Your donation will provide:</p>
+                    <ul style="list-style: none; margin: 20px 0;">
+                        <li style="margin: 10px 0; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0;">✓</span>
+                            Emergency shelter and temporary housing
+                        </li>
+                        <li style="margin: 10px 0; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0;">✓</span>
+                            Food, clean water, and essential supplies
+                        </li>
+                        <li style="margin: 10px 0; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0;">✓</span>
+                            Medical care and trauma support
+                        </li>
+                        <li style="margin: 10px 0; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0;">✓</span>
+                            Long-term recovery and rebuilding support
+                        </li>
+                    </ul>
+                    <div style="background: white; padding: 20px; border-radius: 10px; margin: 25px 0; box-shadow: var(--shadow);">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 1.1rem;">
+                            <span><strong>Raised:</strong> $125,000</span>
+                            <span><strong>Goal:</strong> $500,000</span>
+                        </div>
+                        <div style="background: var(--border-color); height: 15px; border-radius: 8px; overflow: hidden;">
+                            <div style="background: var(--primary-color); height: 100%; width: 25%; transition: width 0.3s;"></div>
+                        </div>
+                        <p style="margin-top: 15px; color: var(--text-light);">375 families helped so far | 1,250 families still need support</p>
+                    </div>
+                    <a href="donate.html?campaign=hurricane" class="btn btn-primary btn-large">Donate Now - Help Families in Need</a>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/15533275/pexels-photo-15533275.jpeg" alt="Disaster relief efforts" style="border-radius: 10px; box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUICK DONATION WIDGET ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <h2>Quick Donation</h2>
+                <p>Make an immediate impact with a quick donation</p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 30px 0;">
+                    <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$25</button>
+                    <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$50</button>
+                    <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$100</button>
+                    <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$250</button>
+                    <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">$500</button>
+                    <button class="btn" style="background: var(--bg-light); border: 2px solid var(--primary-color); color: var(--primary-color);">Custom</button>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Enter custom amount" style="text-align: center; font-size: 1.2rem;">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" style="width: auto; margin-right: 10px;">
+                        Make this a monthly donation
+                    </label>
+                </div>
+                <a href="donate.html" class="btn btn-primary btn-large" style="width: 100%;">Continue to Payment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW DONATIONS ARE USED (TRANSPARENCY) ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>How Your Donations Are Used</h2>
+                <p>We believe in complete transparency. Here's exactly where your money goes.</p>
+            </div>
+            <div class="grid grid-2" style="align-items: center; margin-bottom: 50px;">
+                <div>
+                    <h3>Financial Transparency</h3>
+                    <p>We are committed to using your donations efficiently and effectively. 85% of every dollar goes directly to programs and services, with only 15% allocated to administrative and fundraising costs.</p>
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Programs & Services</span>
+                            <strong>85%</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--success-color); height: 100%; width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Administrative</span>
+                            <strong>10%</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--accent-color); height: 100%; width: 10%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Fundraising</span>
+                            <strong>5%</strong>
+                        </div>
+                        <div style="background: var(--bg-light); height: 25px; border-radius: 5px; overflow: hidden;">
+                            <div style="background: var(--primary-color); height: 100%; width: 5%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Transparency and accountability" style="border-radius: 10px;">
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="about.html#transparency" class="btn btn-secondary">View Full Financial Reports</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROGRAM HIGHLIGHTS ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Disaster Relief Programs</h2>
+                <p>Comprehensive support from immediate response to long-term recovery</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3 class="card-title">🚨 Immediate Response</h3>
+                    <p class="card-text">24/7 emergency response teams providing immediate aid within hours of a disaster. Includes search and rescue, medical care, and emergency supplies.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">🏠 Temporary Shelter</h3>
+                    <p class="card-text">Safe, secure temporary housing for displaced families. We provide tents, emergency shelters, and coordinate with local authorities for longer-term solutions.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">💊 Medical & Health</h3>
+                    <p class="card-text">Mobile medical units, trauma counseling, and health services for disaster victims. We ensure access to essential healthcare during crises.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">🍽️ Food & Water</h3>
+                    <p class="card-text">Distribution of clean water, nutritious meals, and food supplies to affected communities. We work to prevent hunger and dehydration.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">🔧 Recovery & Rebuilding</h3>
+                    <p class="card-text">Long-term support for rebuilding homes, restoring infrastructure, and helping communities recover and become more resilient.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">📚 Education Continuity</h3>
+                    <p class="card-text">Temporary learning spaces and educational support to ensure children's education continues even during and after disasters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== URGENT CAUSES SLIDER ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Other Urgent Causes</h2>
+                <p>Multiple disasters require immediate attention</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/184878691/photo/flood.jpg?b=1&s=612x612&w=0&k=20&c=SwfRJFRmyOm395g3ik8rUeCXl2uSubHEE3QFmuKFoZU=" alt="Flood relief" class="card-img">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <span style="background: var(--primary-color); color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem; display: inline-block;">URGENT</span>
+                    </div>
+                    <h3 class="card-title">Flood Relief - Southeast Region</h3>
+                    <p class="card-text">Severe flooding has displaced thousands. Help provide emergency aid and recovery support.</p>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px;">
+                            <span>$45,000 raised</span>
+                            <span>$100,000 goal</span>
+                        </div>
+                        <div style="background: var(--bg-light); height: 8px; border-radius: 4px;">
+                            <div style="background: var(--primary-color); height: 100%; width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="donate.html?campaign=flood" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/172282310/photo/after-the-fire.jpg?b=1&s=612x612&w=0&k=20&c=GQYcR0-vhXavA3fjjGx8g-wxWpIrpN3CguDxE3mRMBY=" alt="Wildfire relief" class="card-img">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <span style="background: var(--primary-color); color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem; display: inline-block;">URGENT</span>
+                    </div>
+                    <h3 class="card-title">Wildfire Recovery - Western States</h3>
+                    <p class="card-text">Communities devastated by wildfires need immediate support for shelter and rebuilding.</p>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px;">
+                            <span>$78,000 raised</span>
+                            <span>$150,000 goal</span>
+                        </div>
+                        <div style="background: var(--bg-light); height: 8px; border-radius: 4px;">
+                            <div style="background: var(--primary-color); height: 100%; width: 52%;"></div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="donate.html?campaign=wildfire" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/15533283/pexels-photo-15533283.jpeg" alt="Earthquake relief" class="card-img">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <span style="background: var(--primary-color); color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem; display: inline-block;">URGENT</span>
+                    </div>
+                    <h3 class="card-title">Earthquake Response - Central Region</h3>
+                    <p class="card-text">Emergency response needed for earthquake-affected areas. Medical care and shelter urgently required.</p>
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px;">
+                            <span>$32,000 raised</span>
+                            <span>$80,000 goal</span>
+                        </div>
+                        <div style="background: var(--bg-light); height: 8px; border-radius: 4px;">
+                            <div style="background: var(--primary-color); height: 100%; width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="donate.html?campaign=earthquake" class="btn btn-primary">Support This Cause</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CASE STUDIES / REAL STORIES ===== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Real Stories of Impact</h2>
+                <p>See how your support makes a difference in real lives</p>
+            </div>
+            <div class="grid grid-2">
+                <div class="card">
+                <img src="https://images.pexels.com/photos/1344265/pexels-photo-1344265.jpeg" alt="Family story" class="card-img">
+                    <h3 class="card-title">The Martinez Family - Rebuilding After the Storm</h3>
+                    <p class="card-text">When Hurricane Maria destroyed their home, the Martinez family lost everything. Through our emergency relief program, we provided immediate shelter, food, and medical care. Today, with our rebuilding support, they have a new home and are back on their feet.</p>
+                    <blockquote style="border-left: 4px solid var(--primary-color); padding-left: 20px; margin: 20px 0; font-style: italic; color: var(--text-dark);">
+                        "We thought we had lost everything. But this organization gave us hope and helped us rebuild our lives. We are forever grateful."
+                    </blockquote>
+                    <p><strong>- Maria Martinez, Disaster Survivor</strong></p>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/623901114/photo/real-friends-are-there-when-you-need-them.jpg?b=1&s=612x612&w=0&k=20&c=uhTBf8UfNm_BTuplwfv1kZ-uQdfOdiZuBBeYGwkx2HI=" alt="Community recovery" class="card-img">
+                    <h3 class="card-title">Riverside Community - From Crisis to Recovery</h3>
+                    <p class="card-text">After severe flooding devastated the Riverside community, our team was on the ground within 24 hours. We provided emergency supplies, set up temporary shelters, and coordinated with local authorities. Six months later, the community is stronger than ever, with improved infrastructure and disaster preparedness programs.</p>
+                    <div style="background: var(--bg-light); padding: 20px; border-radius: 8px; margin-top: 20px;">
+                        <h4 style="margin-bottom: 15px;">Impact Numbers:</h4>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                            <div>
+                                <strong style="font-size: 1.5rem; color: var(--primary-color);">500+</strong>
+                                <p style="margin: 5px 0 0 0;">Families Helped</p>
+                            </div>
+                            <div>
+                                <strong style="font-size: 1.5rem; color: var(--primary-color);">$250K</strong>
+                                <p style="margin: 5px 0 0 0;">Recovery Funds</p>
+                            </div>
+                            <div>
+                                <strong style="font-size: 1.5rem; color: var(--primary-color);">3</strong>
+                                <p style="margin: 5px 0 0 0;">Schools Rebuilt</p>
+                            </div>
+                            <div>
+                                <strong style="font-size: 1.5rem; color: var(--primary-color);">100%</strong>
+                                <p style="margin: 5px 0 0 0;">Community Recovery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA FOR DONATIONS & VOLUNTEERING ===== -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">Help Us Respond to Emergencies</h2>
+            <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">Your support enables us to respond quickly when disaster strikes. Every donation helps us save lives and rebuild communities.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="donate.html" class="btn btn-large" style="background: white; color: var(--primary-color);">Donate to Emergency Fund</a>
+                <a href="volunteer.html" class="btn btn-large btn-outline" style="border-color: white; color: white;">Join Our Relief Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
+
+
+
